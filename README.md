@@ -6,7 +6,7 @@ Asset collector used by LaraSpell for field components who need some css and js 
 
 For example, if you have view partial `input-select2.blade.php` like this:
 
-```php
+```html
 <select name="{{ $name }}" class="form-control use-select2" id="{{ $id }}">
   @foreach($options as $option)
   <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
@@ -32,7 +32,7 @@ So it will increase rendered page size and can be trouble for some plugins.
 
 This library is just to prevent that case. Using asset collector, code above will be like this:
 
-```php
+```html
 <select name="{{ $name }}" class="form-control use-select2" id="{{ $id }}">
   @foreach($options as $option)
   <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
@@ -52,7 +52,7 @@ $(function() {
 
 Then in master view, you can dump collected assets like this:
 
-```php
+```html
 <!doctype html>
 <html>
 <head>
