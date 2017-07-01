@@ -8,9 +8,9 @@ For example, if you have view partial `input-select2.blade.php` like this:
 
 ```php
 <select name="{{ $name }}" class="form-control use-select2" id="{{ $id }}">
-    @foreach($options as $option)
-    <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
-    @endforeach
+  @foreach($options as $option)
+  <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
+  @endforeach
 </select>
 
 @push('styles')
@@ -21,7 +21,7 @@ For example, if you have view partial `input-select2.blade.php` like this:
 <script src="{{ asset('path/to/select2/select2.min.js') }}"></script>
 <script>
 $(function() {
-    $("select.use-select2").select2();
+  $("select.use-select2").select2();
 })
 </script>
 @endpush
@@ -34,9 +34,9 @@ This library is just to prevent that case. Using asset collector, code above wil
 
 ```php
 <select name="{{ $name }}" class="form-control use-select2" id="{{ $id }}">
-    @foreach($options as $option)
-    <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
-    @endforeach
+  @foreach($options as $option)
+  <option value="{{ $option['value'] }}">{{ $option['label'] }}</option>
+  @endforeach
 </select>
 
 @css('path/to/select2/select2.min.css')
@@ -44,7 +44,7 @@ This library is just to prevent that case. Using asset collector, code above wil
 @script
 <script>
 $(function() {
-    $("select.use-select2").select2();
+  $("select.use-select2").select2();
 })
 </script>
 @endscript
@@ -56,17 +56,17 @@ Then in master view, you can dump collected assets like this:
 <!doctype html>
 <html>
 <head>
-    ...
-    @section('styles')
-        @styles()
-    @show
-    ...
+  ...
+  @section('styles')
+    @styles()
+  @show
+  ...
 </head>
 <body>
-    ...
-    @section('scripts')
-        @scripts()
-    @show
+  ...
+  @section('scripts')
+    @scripts()
+  @show
 </body>
 </html>
 ```
