@@ -79,6 +79,6 @@ Run composer command below to install asset-collector:
 composer require "laraspell/asset-collector"
 ```
 
-Then open your `config/app.php`, put `LaraSpell\AssetCollectorServiceProvider::class` to 'providers' section:
+Then open your `config/app.php`, put `LaraSpells\AssetCollectorServiceProvider::class` to 'providers' section:
 
 Thats it!
