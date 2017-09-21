@@ -1,5 +1,5 @@
 {
-    "name": "laraspell/asset-collector",
+    "name": "laraspells/asset-collector",
     "description": "Blade directives to prevent multiple asset (css/js) code insertions.",
     "type": "library",
     "license": "MIT",

@@ -76,7 +76,7 @@ Then in master view, you can dump collected assets like this:
 Run composer command below to install asset-collector:
 
 ```
-composer require "laraspell/asset-collector"
+composer require "laraspells/asset-collector"
 ```
 
 Then open your `config/app.php`, put `LaraSpells\AssetCollectorServiceProvider::class` to 'providers' section:
