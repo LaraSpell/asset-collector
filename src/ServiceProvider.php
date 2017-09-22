@@ -1,11 +1,11 @@
 <?php
 
-namespace LaraSpells;
+namespace LaraSpells\AssetCollector;
 
 use Blade;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class AssetCollectorServiceProvider extends ServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Bootstrap the application services.

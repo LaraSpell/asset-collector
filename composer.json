@@ -11,7 +11,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "LaraSpells\\": "src"
+            "LaraSpells\\AssetCollector\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraSpells\\AssetCollector\\ServiceProvider"
+            ]
         }
     }
 }
